@@ -1,4 +1,5 @@
 @import 'configuraciones';
+@import 'utilidades';
 
 // Estilos Generales
 *{
@@ -27,4 +28,63 @@ h2, h3, h4{
 
 img{
     width: 100%;
+}
+
+// Logo
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+// Navegacion principal
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover{
+            border-color: $medium-color;
+        }
+
+        &.current{
+            border-color: $main-color;
+        }
+    }
+}
+
+// Header
+#header{
+    // Header home
+    &-home{
+        background: $backg-image no-repeat center right/cover;
+        height: 100vh;
+        color: #fff;
+
+        // Header content
+        .header-content{
+            text-align: center;
+            padding: 20%;
+
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
 }
