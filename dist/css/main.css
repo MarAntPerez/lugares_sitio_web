@@ -45,16 +45,16 @@ button[class^='btn-']:hover, a[class^='btn-']:hover, input[class^='btn-']:hover 
 .py-4 {
   padding: 4rem 0; }
 
-.py-1 {
+.my-1 {
   margin: 1rem 0; }
 
-.py-2 {
+.my-2 {
   margin: 2rem 0; }
 
-.py-3 {
+.my-3 {
   margin: 3rem 0; }
 
-.py-4 {
+.my-4 {
   margin: 4rem 0; }
 
 * {
@@ -136,3 +136,40 @@ img {
       background: #f4f4f4; }
     #home-b .stats div:nth-child(even) {
       background: #ccc; }
+
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center; }
+  #home-c .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    background: #ffbc00;
+    color: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    padding: 1rem;
+    transition: all 1s; }
+  #home-c .process-icon {
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    transition: all 1s; }
+    #home-c .process-icon:hover {
+      background: #ffbc00;
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
+      #home-c .process-icon:hover .process-step {
+        background-color: #333;
+        color: set-test-color(#333); }
