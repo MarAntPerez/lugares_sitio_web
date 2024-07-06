@@ -87,6 +87,13 @@ img{
             }
         }
     }
+
+    // Header Inner
+    &-inner{
+        background: $backg-image no-repeat 20% 30% /cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
 }
 
 // Estilos Secciones Inicio
@@ -179,6 +186,41 @@ img{
                     }
                 }
             }
+        }
+    }
+}
+
+// Seccion nosotros
+#about{
+    // Nosotros A
+    &-a{
+        .about-info{
+            display: grid;
+            grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+            grid-gap: 1.2rem;
+        }
+
+        // Grid area
+        .bio-image{
+            grid-area: bioimage;
+        }
+
+        .bio{
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+        }
+
+        .award-1{
+            grid-area: aw1;
+        }
+
+        .award-2{
+            grid-area: aw2;
+        }
+
+        .award-3{
+            grid-area: aw3;
         }
     }
 }
